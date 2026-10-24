@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Fiber Mix × 35+ Lifestyle Creators · Creator Brief</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%231B6B4F'/%3E%3Cpath d='M18 34c4-2 6-8 8-14 3 7 5 12 9 15 5 4 9 4 13 3' stroke='%23F9EDD8' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#F4F8F4; --surface:#FFFFFF; --ink:#133428; --ink-2:#48635A;
+    --green-950:#0B2B1F; --green-700:#145540; --green-600:#1B6B4F; --green-500:#2E8B67;
+    --green-100:#DEEEE4; --green-50:#EEF6F0;
+    --amber:#E39A2F; --amber-deep:#B97618; --amber-soft:#F9EDD8;
+    --line:#DCE9E1;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Helvetica,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  a{color:var(--green-600)}
+  .serif{font-family:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif}
+
+  /* Header */
+  header.site{background:var(--green-950);color:#F2F7F3}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;max-width:1060px;margin:0 auto;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em}
+  .brand svg{flex:none}
+  .brand small{display:block;font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#A9C8B8}
+  .topbar .tag{font-size:13px;color:#CBE2D5;border:1px solid #2C5B48;padding:6px 12px;border-radius:999px;white-space:nowrap}
+
+  /* Hero */
+  .hero{background:linear-gradient(160deg,var(--green-950) 0%,var(--green-700) 68%,var(--green-600) 100%);color:#F2F7F3;padding:54px 0 56px}
+  .hero .eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:#B8D6C5;font-weight:600}
+  .hero h1{font-size:clamp(32px,5.6vw,56px);line-height:1.06;margin:12px 0 8px;font-weight:700;letter-spacing:-.01em}
+  .hero .aud{display:inline-block;margin:12px 0 0;background:var(--amber);color:#3A2407;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+  .hero .sub{font-size:clamp(15.5px,2vw,18px);color:#D7E9DE;max-width:660px;margin-top:14px}
+  .offer-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#FDF6E9;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600}
+  .chip .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);flex:none}
+
+  section{padding:52px 0}
+  .kicker{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--green-500);font-weight:700}
+  h2.sec{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;font-size:clamp(26px,3.6vw,36px);line-height:1.15;margin:10px 0 12px;font-weight:700;color:var(--green-950)}
+  .lede{color:var(--ink-2);max-width:700px;font-size:16px}
+  .alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+  /* About */
+  .about-grid{display:grid;gap:16px;margin-top:26px}
+  .about-item{background:var(--green-50);border:1px solid var(--green-100);border-radius:16px;padding:22px}
+  .about-item .num{font-family:"Iowan Old Style",Georgia,serif;font-size:34px;font-weight:700;color:var(--green-500);line-height:1}
+  .about-item p{margin-top:10px;font-size:15px;color:var(--ink)}
+  .tagline{margin-top:26px;font-family:"Iowan Old Style",Georgia,serif;font-style:italic;font-size:clamp(20px,3vw,26px);color:var(--green-700)}
+
+  /* Product */
+  .prod .blurb{font-size:16.5px;color:var(--ink)}
+  .specs{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .spec{background:var(--green-50);border:1px solid var(--green-100);color:var(--green-700);font-weight:700;padding:8px 14px;border-radius:999px;font-size:14px}
+  .drink-note{margin-top:18px;background:var(--amber-soft);border:1px solid #EFD9B0;color:#5C4314;padding:12px 16px;border-radius:12px;font-size:15px;font-weight:600}
+
+  /* Benefits */
+  .benefits{display:grid;gap:14px}
+  .benefit{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+  .benefit .ic{width:42px;height:42px;border-radius:12px;background:var(--green-100);display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .benefit h3{font-size:17px;color:var(--green-950);margin-bottom:6px}
+  .benefit p{font-size:14.5px;color:var(--ink-2)}
+
+  /* Why different */
+  .why{display:grid;gap:18px;margin-top:26px}
+  .why-item{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+  .why-item .media{background:var(--green-100);min-height:180px;overflow:hidden}
+  .why-item .media img{width:100%;height:100%;object-fit:cover;display:block}
+  .why-item .inner{padding:20px}
+  .why-item h3{font-size:17.5px;color:var(--green-950);margin-bottom:8px}
+  .why-item p{font-size:14.5px;color:var(--ink-2)}
+  .mini-links{margin-top:12px;display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-flex;align-items:center;gap:7px;background:var(--green-700);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px}
+  .btn:hover{background:var(--green-950)}
+  .btn.ghost{background:transparent;color:var(--green-700);border:1.5px solid var(--green-100)}
+  .btn.ghost:hover{border-color:var(--green-500)}
+
+  /* Offer */
+  .offer-panel{background:linear-gradient(140deg,var(--amber-soft) 0%,#FDF7EA 100%);border:1px solid #EFD9B0;border-radius:22px;padding:30px 28px;margin-top:26px}
+  .offer-panel h3{font-family:"Iowan Old Style",Georgia,serif;font-size:24px;color:#4A3508;margin-bottom:14px}
+  .offer-list{display:grid;gap:12px}
+  .offer-item{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;color:#5C4314}
+  .offer-item .mk{flex:none;width:22px;height:22px;border-radius:50%;background:var(--amber);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;margin-top:2px}
+  .offer-item strong{color:#3A2407}
+  .offer-note{margin-top:16px;font-size:13.5px;color:#8A6A2F;font-style:italic}
+
+  /* Formats */
+  .formats{display:grid;gap:16px;margin-top:24px}
+  .format{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .format .no{font-family:"Iowan Old Style",Georgia,serif;font-size:30px;font-weight:700;color:var(--green-500);line-height:1}
+  .format h3{font-size:19px;color:var(--green-950);margin:8px 0 8px}
+  .format p{font-size:14.5px;color:var(--ink-2)}
+  .refs{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
+  .ref{font-size:13px;background:var(--green-50);border:1px solid var(--green-100);color:var(--green-700);padding:6px 12px;border-radius:999px;text-decoration:none;font-weight:600}
+  .ref:hover{border-color:var(--green-500)}
+  .optional{margin-top:18px;background:var(--green-50);border:1px solid var(--green-100);border-radius:16px;padding:18px 20px}
+  .optional h4{font-size:15.5px;color:var(--green-950);margin-bottom:10px}
+  .optional ol{margin-left:20px;display:grid;gap:6px;font-size:14.5px;color:var(--ink-2)}
+
+  /* Hooks */
+  .hooks{display:grid;gap:16px;margin-top:24px}
+  .hook{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+  .hook h3{font-size:16.5px;color:var(--green-950);margin-bottom:8px}
+  .hook .desc{font-size:14px;color:var(--ink-2);margin-bottom:12px}
+  .hook ul{margin-left:18px;display:grid;gap:8px;font-size:14.5px;color:var(--ink)}
+  .hook ul li::marker{color:var(--green-500)}
+  .hook-imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin-top:12px}
+  .hook-imgs figure{background:var(--green-100);border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+  .hook-imgs img{width:100%;height:100px;object-fit:cover;display:block}
+  .hook-imgs figcaption{font-size:11px;text-align:center;color:var(--ink-2);padding:4px 2px;background:var(--surface)}
+  .hook-portrait{background:var(--green-100);border-radius:10px;overflow:hidden;border:1px solid var(--line);margin-top:12px}
+  .hook-portrait img{width:100%;max-height:150px;object-fit:cover;display:block}
+
+  /* Shared body / CTA */
+  .steps{display:grid;gap:12px;margin-top:22px}
+  .step{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--green-500);border-radius:12px;padding:16px 18px}
+  .step h4{font-size:15.5px;color:var(--green-950);margin-bottom:6px}
+  .step p, .step li{font-size:14.5px;color:var(--ink-2)}
+  .step ul{margin-left:18px;display:grid;gap:6px}
+  .ctas{display:grid;gap:12px;margin-top:22px}
+  .cta{background:var(--amber-soft);border:1px solid #EFD9B0;border-radius:14px;padding:16px 18px}
+  .cta h4{font-size:15px;color:#4A3508;margin-bottom:6px}
+  .cta p{font-size:14.5px;color:#5C4314}
+
+  /* Must haves */
+  .must{display:grid;gap:10px;margin-top:24px}
+  .must li{list-style:none;display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:13px 16px;font-size:14.5px;color:var(--ink)}
+  .must .ck{flex:none;width:22px;height:22px;border-radius:50%;background:var(--green-600);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;margin-top:2px}
+
+  /* Assets */
+  .assets{display:grid;gap:16px;margin-top:24px}
+  .asset{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+  .asset .vid{background:#081F16}
+  .asset video{width:100%;display:block;max-height:420px}
+  .asset .inner{padding:20px}
+  .asset h3{font-size:17.5px;color:var(--green-950);margin-bottom:8px}
+  .asset p,.asset li{font-size:14.5px;color:var(--ink-2)}
+  .asset ol{margin-left:18px;display:grid;gap:5px}
+  .asset .mini-links{margin-top:14px}
+
+  footer.site{background:var(--green-950);color:#CBE2D5;padding:32px 0;text-align:center;font-size:14px}
+  .htags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0 6px}
+  .htags span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#E6F1EA;padding:5px 12px;border-radius:999px;font-size:13px}
+
+  @media (min-width:640px){
+    .about-grid{grid-template-columns:repeat(3,1fr)}
+    .benefits{grid-template-columns:repeat(2,1fr)}
+    .why{grid-template-columns:repeat(3,1fr)}
+    .formats{grid-template-columns:repeat(3,1fr)}
+    .hooks{grid-template-columns:repeat(3,1fr)}
+    .assets{grid-template-columns:repeat(3,1fr)}
+    .offer-list{grid-template-columns:repeat(2,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="topbar">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#2E8B67"/><path d="M18 34c4-2 6-8 8-14 3 7 5 12 9 15 5 4 9 4 13 3" stroke="#F9EDD8" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+      <span>WonderBiotics<small>Creator Brief</small></span>
+    </div>
+    <span class="tag">Black Friday 2026</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Creator Content Brief · Black Friday 2026</p>
+    <h1 class="serif">Daily Fiber Mix — The Hollywood Secret Flat-Tummy Fiber</h1>
+    <span class="aud">35+ Lifestyle Creators</span>
+    <p class="sub">One stick a day. Less bloating, regularity, and fullness — the simple fiber habit that actually fits the life you already have.</p>
+    <div class="offer-strip">
+      <span class="chip"><span class="dot"></span>Up to 66% off the 3-pack</span>
+      <span class="chip"><span class="dot"></span>Free tote bag · while supplies last</span>
+      <span class="chip"><span class="dot"></span>Lifetime Satisfaction Guarantee</span>
+    </div>
+  </div>
+</div>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">About the brand</p>
+    <h2 class="sec">WonderBiotics, in three lines</h2>
+    <div class="about-grid">
+      <div class="about-item"><div class="num">01</div><p>We are a global, science-led microbiome supplement brand — built on clinical evidence, trusted by <strong>1 billion gut-health moments</strong> worldwide.</p></div>
+      <div class="about-item"><div class="num">02</div><p>Every formula is co-created with the world's best minds: leading microbiome scientists, nutritionists, and Hollywood star trainers.</p></div>
+      <div class="about-item"><div class="num">03</div><p>Our philosophy goes beyond evidence. Science earns our trust, but it only truly works when it <strong>fits seamlessly into your life</strong>.</p></div>
+    </div>
+    <p class="tagline">WonderBiotics. It works, Wonderfully.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">The product</p>
+    <h2 class="sec">Daily Fiber Mix — one easy daily stick</h2>
+    <div class="prod">
+      <p class="blurb">A clear, flavorless prebiotic fiber supplement that supports regularity, eases bloating, promotes digestive health, and helps increase fullness — all in one easy daily stick.</p>
+      <div class="specs">
+        <span class="spec">4 kinds of prebiotics</span>
+        <span class="spec">5 kinds of fibers &amp; superfoods</span>
+        <span class="spec">6g fiber = 20 raspberries</span>
+        <span class="spec">Non-GMO</span>
+        <span class="spec">Low-FODMAP</span>
+        <span class="spec">Unflavored</span>
+      </div>
+      <div class="drink-note">Mix one stick into your favorite drink daily — about 30 seconds, no new routine to remember.</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Benefits</p>
+    <h2 class="sec">What it does for you</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-4 5-8 6-12 1 4 3 8 6 11 3 3 5 3 6 2"/></svg></div>
+        <h3>Flat tummy</h3>
+        <p>Helps ease bloating and digestive discomfort, so you can feel confident in a flatter-looking stomach.</p>
+      </div>
+      <div class="benefit">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 8l5-5 5 5M7 16l5 5 5-5"/></svg></div>
+        <h3>Regularity</h3>
+        <p>Supports regular bowel movements — feel less backed up, less heavy.</p>
+      </div>
+      <div class="benefit">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Gut health</h3>
+        <p>Promotes a healthy gut microbiome with prebiotic fiber that feeds the good bacteria.</p>
+      </div>
+      <div class="benefit">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1B6B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 4-2 7h-10c0-3-2-4-2-7a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></div>
+        <h3>Fullness &amp; food noise</h3>
+        <p>Helps increase fullness and shut down the food noise — easier appetite management.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Why it's different</p>
+    <h2 class="sec">Three reasons to believe</h2>
+    <div class="why">
+      <div class="why-item">
+        <div class="media"><img src="assets/celebrity-fibermaxx-35.png" alt="FiberMaxx Like A Star poster with Harley Pasternak"></div>
+        <div class="inner">
+          <h3>Hollywood celebrity-trainer endorsement</h3>
+          <p>WonderBiotics partnered with celebrity trainer Harley Pasternak, who uses and recommends Daily Fiber Mix. His clients include Ariana Grande, Charlie Puth, Lady Gaga, and Megan Fox.</p>
+          <div class="mini-links">
+            <a class="btn ghost" href="https://www.tiktok.com/@harley_pasternak/video/7689433700164963614" target="_blank" rel="noopener">Watch Harley's video</a>
+          </div>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="media"><img src="assets/oil-absorption-cup-35.png" alt="Oil-absorption demo cup"></div>
+        <div class="inner">
+          <h3>Oil-absorption</h3>
+          <p>Daily Fiber Mix can bind to and carry away oil, helping reduce the greasy, heavy feeling after a meal.</p>
+          <div class="mini-links">
+            <a class="btn ghost" href="videos/oil-absorption.mp4" download="Oil-Absorption.mp4">Watch demo MP4</a>
+          </div>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="media"><img src="assets/solubility-35.png" alt="Easy to mix into coffee, tea, water or smoothies"></div>
+        <div class="inner">
+          <h3>Easy to mix — not another sugary snack</h3>
+          <p>Blends smoothly into coffee, tea, water, or smoothies with no noticeable taste. No gummy or jelly — just fiber that fits your existing routine.</p>
+          <div class="mini-links">
+            <a class="btn ghost" href="videos/comparison-of-solubility.mp4" download="Comparison-of-Solubility.mp4">Watch dissolve demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">The offer</p>
+    <h2 class="sec">Black Friday Offer</h2>
+    <p class="lede">Use the same offer across all videos — keep it consistent.</p>
+    <div class="offer-panel">
+      <h3 class="serif">Up to 66% OFF the 3-pack</h3>
+      <div class="offer-list">
+        <div class="offer-item"><span class="mk">1</span><div><strong>Lifetime Satisfaction Guarantee</strong> — only brand in this category that does this. Love it, or it's on us. No-questions-asked refund.</div></div>
+        <div class="offer-item"><span class="mk">2</span><div><strong>Stock up with the 3-pack</strong> — save up to 66% off this Black Friday.</div></div>
+        <div class="offer-item"><span class="mk">3</span><div><strong>BFCM-only gift:</strong> FREE WonderBiotics brand tote bag with your order, while supplies last.</div></div>
+      </div>
+      <p class="offer-note">First 200 orders receive the free tote bag. Mention both in your video and keep the deadline front of mind.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Content</p>
+    <h2 class="sec">Please create the recommended videos</h2>
+    <p class="lede">For any additional videos, choose from the optional formats below or develop your own creative concept. If you'd like your own concept, share the idea with our team in advance and wait for confirmation before filming.</p>
+    <div class="formats">
+      <div class="format">
+        <div class="no">01</div>
+        <h3>Personal Experience and Life Stage</h3>
+        <p>Open from where you are in life — more intentional about your health routine — then show how Daily Fiber Mix fits the habits you already have.</p>
+        <div class="refs">
+          <a class="ref" href="https://www.tiktok.com/@emanthei/video/7671204355562818830" target="_blank" rel="noopener">Reference 1</a>
+          <a class="ref" href="https://www.tiktok.com/@poshwellness/video/7646460252132576542" target="_blank" rel="noopener">Reference 2</a>
+        </div>
+      </div>
+      <div class="format">
+        <div class="no">02</div>
+        <h3>Celebrity and celebrity-trainer angle</h3>
+        <p>Use celebrity culture to introduce fiber as a growing wellness conversation — Hollywood's biggest A-list trainer uses and recommends it.</p>
+        <div class="refs">
+          <a class="ref" href="https://www.tiktok.com/@poshwellness/video/7698399454285548830" target="_blank" rel="noopener">Reference 1</a>
+          <a class="ref" href="https://www.tiktok.com/@harley_pasternak/video/7689433700164963614" target="_blank" rel="noopener">Reference 2</a>
+        </div>
+      </div>
+      <div class="format">
+        <div class="no">03</div>
+        <h3>Education or Contrarian Hook</h3>
+        <p>Use a surprising statement to challenge the idea that a flatter-looking stomach is only about exercise, protein, or genetics.</p>
+        <div class="refs">
+          <a class="ref" href="https://www.tiktok.com/@poshwellness/video/7696549828507028767" target="_blank" rel="noopener">Reference 1</a>
+          <a class="ref" href="https://www.tiktok.com/@ihatebriannachickenfry/video/7681137137936289054" target="_blank" rel="noopener">Reference 2</a>
+        </div>
+      </div>
+    </div>
+    <div class="optional">
+      <h4>Optional formats</h4>
+      <ol>
+        <li><strong>Fiber Is the New Protein</strong> — tap into the growing conversation: "We've focused on protein—now it's time to give fiber the same attention." Explain how fiber supports gut health, regularity, and fullness, then introduce Daily Fiber Mix as an easy addition.</li>
+        <li><strong>Everyday Morning Coffee Routine / GRWM</strong> — show how you mix Daily Fiber Mix into a drink that's already part of your daily routine.</li>
+        <li><strong>Pop-Culture &amp; Seasonal Gift Angle</strong> — tie the video to a pop-culture moment or seasonal occasion. For Thanksgiving or Christmas, present Daily Fiber Mix as a thoughtful wellness gift.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Hooks to use</p>
+    <h2 class="sec">Pick a hook, pick a line</h2>
+    <div class="hooks">
+      <div class="hook">
+        <h3>01 · Personal Experience and Life Stage</h3>
+        <p class="desc">At this stage of life, you're more intentional about your health routine. You want less bloating and a flatter-looking stomach without extreme diets or complicated steps. Those sugary supplement gummies, jellies, or drinks? Cute, but no longer feel like the right fit. Pick a line to open.</p>
+        <ul>
+          <li>"I'm 40, and honestly, I feel better in my body now than I did in my 30s. My skin is glowing, I feel stronger, and I'm still focused on keeping my stomach comfortable and flatter-feeling."</li>
+          <li>"As a mom in my 40s, I'm not interested in extreme diets. I'm focused on simple habits I can actually maintain — and that's exactly how I got a flat tummy: by debloating gently, every single day."</li>
+          <li>"My friends, my husband, and even my doctor kept reminding me to get more fiber. I don't want my fiber disguised as another sugary snack — I want fiber that treats my gut right. I finally found a way to make it part of my daily routine."</li>
+          <li>"At this age, I've learned that feeling good is not just about exercise. Digestion matters, too — that's where the flat tummy actually starts. I need something straightforward that I'll actually use every day."</li>
+        </ul>
+        <p class="desc" style="margin-top:14px">On-screen text options (pick one):</p>
+        <ul>
+          <li>"my anti-aging routine as a mom in my 40s"</li>
+          <li>"How I got hotter in my 40s"</li>
+        </ul>
+        <div class="hook-imgs">
+          <figure><img src="assets/lifestage-1.png" alt="Life-stage visual 1"><figcaption>1</figcaption></figure>
+          <figure><img src="assets/lifestage-2.png" alt="Life-stage visual 2"><figcaption>2</figcaption></figure>
+          <figure><img src="assets/lifestage-3.png" alt="Life-stage visual 3"><figcaption>3</figcaption></figure>
+          <figure><img src="assets/lifestage-4.png" alt="Life-stage visual 4"><figcaption>4</figcaption></figure>
+          <figure><img src="assets/lifestage-5.png" alt="Life-stage visual 5"><figcaption>5</figcaption></figure>
+        </div>
+      </div>
+      <div class="hook">
+        <h3>02 · Celebrity and celebrity-trainer angle</h3>
+        <p class="desc">Hollywood's biggest A-list celebrity trainer and nutritionist Harley Pasternak (5X New York Times bestselling author) uses and recommends WonderBiotics Fiber to all his clients. His client list includes Ariana Grande, Charlie Puth, Lady Gaga, Rihanna, Megan Fox, Kim K and more.</p>
+        <ul>
+          <li>"She takes it. She takes it. She/he takes it. And she/he takes it. Why are all these names talking about fiber for a flatter-looking tummy?"</li>
+          <li>"Fiber is not just something Hailey Bieber talks about. Trainers connected to stars like Ariana Grande and Charlie Puth are talking about getting more fiber, too."</li>
+          <li>"I pay attention to what celebrities, trainers, and nutritionists are talking about. Do you know what keeps coming up? Fiber. And honestly? Fiber is the whole secret behind a flat tummy."</li>
+        </ul>
+        <div class="hook-portrait"><img src="assets/celebrity-clients.png" alt="Celebrity clients of Harley Pasternak"></div>
+      </div>
+      <div class="hook">
+        <h3>03 · Education or Contrarian Hook</h3>
+        <p class="desc">Use a surprising statement to challenge the idea that a flatter-looking stomach is only about exercise, protein, or genetics.</p>
+        <ul>
+          <li>"She doesn't necessarily have better genetics. She may simply be getting enough of the right fiber — the kind that keeps her tummy flat."</li>
+          <li>"Everyone is talking about magnesium, creatine, and protein, but one of the most overlooked nutrients is fiber — the one that actually keeps your tummy flat and debloated."</li>
+          <li>"This isn't an ad — this is my honest recommendation after actually using it and feeling a real difference: less bloat, a flatter tummy, and a stomach that finally feels comfortable all day."</li>
+          <li>"Honestly — when is this brand going to work with me? I love this fiber that much. It's the first thing that's given me a genuinely flat tummy."</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="kicker" style="margin-top:44px">Body</p>
+    <h2 class="sec">Shared body guidance</h2>
+    <div class="steps">
+      <div class="step">
+        <h4>Step 1 · The science — why everyone's missing fiber (pick 2–3 lines)</h4>
+        <ul>
+          <li><strong>The overlooked nutrient:</strong> "Everyone's obsessed with magnesium, protein, creatine... but we're all ignoring the one that's more important and more basic: fiber. It directly affects your gut health, your skin, even your blood sugar."</li>
+          <li><strong>What fiber actually does:</strong> "Here's what fiber actually does: it feeds the good bacteria in your gut, it helps keep things moving, and it keeps you fuller longer — that's why it shows up in your digestion, your skin, even your blood sugar." / "Fiber feeds your gut bacteria, keeps you regular, and keeps you full — three jobs, one nutrient."</li>
+          <li><strong>The reality check:</strong> "Here's the reality — 95% of Americans don't get enough fiber, and that shows up in your digestion and your gut health."</li>
+          <li><strong>Evidence overlay:</strong> when mentioning a statistic or scientific benefit, add an evidence image or source on screen.</li>
+        </ul>
+      </div>
+      <div class="step">
+        <h4>Step 2 · Show why it fits your routine — the familiar drink + product specialness</h4>
+        <p>Show yourself adding one stick to a drink you already have every day, such as coffee, tea, water, or a smoothie. Cover these three points naturally — you don't need to read the wording exactly.</p>
+        <ul>
+          <li><strong>It fits an existing habit:</strong> "This isn't a new routine — it's the coffee I already make every morning. I just add one stick and at the same time I'm getting prebiotic fiber that helps ease bloating, supports regular bowel movements, and keeps your gut healthier."</li>
+          <li><strong>It is fiber, not another snack:</strong> "I didn't want another pill or separate shake to remember, and I didn't want a gummy or jelly that felt like a snack. I wanted to treat fiber like fiber. This fiber blends smoothly into my coffee with no noticeable taste and takes about 30 seconds."</li>
+          <li><strong>One-stick proof point:</strong> "One stick, 6g of fiber — that's the fiber of 20 raspberries."</li>
+          <li><strong>Optional footage:</strong> we share the easy-dissolve comparison demo (vs. chalky fiber powders) with you. Including it is entirely optional — only add it if it fits naturally.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="kicker" style="margin-top:44px">CTA</p>
+    <h2 class="sec">CTA to use — three building blocks, combine in your own words</h2>
+    <p class="lede">Choose one CTA direction and adapt it naturally.</p>
+    <div class="ctas">
+      <div class="cta"><h4>CTA 1 · Age and Personal Experience</h4><p>"If you want to support a flatter-feeling, more comfortable tummy at this stage of life, Daily Fiber Mix is an easy habit to add to your morning. It's available with a huge Black Friday discount, plus a limited-time BFCM gift. It's also backed by a Lifetime Satisfaction Guarantee. Tap the product link to shop."</p></div>
+      <div class="cta"><h4>CTA 2 · Celebrity-Trainer Angle</h4><p>"If you want to try the daily fiber routine recommended by celebrity trainers, Daily Fiber Mix is available with a huge Black Friday discount, plus a limited-time BFCM gift. It's also backed by a Lifetime Satisfaction Guarantee. Tap the product link to learn more."</p></div>
+      <div class="cta"><h4>CTA 3 · Routine and Convenience Angle</h4><p>"One stick in the drink you already make — that's the kind of routine I can actually maintain. Daily Fiber Mix is available with a huge Black Friday discount, plus a limited-time BFCM gift, and it's backed by a Lifetime Satisfaction Guarantee. Tap the product link to shop."</p></div>
+      <div class="cta"><h4>CTA 4 · Discount-First Angle</h4><p>"Daily Fiber Mix is available with a huge Black Friday discount, plus a limited-time BFCM gift. It's also backed by a Lifetime Satisfaction Guarantee. So tap the product link to discover the Hollywood flat-tummy fiber secret!"</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Creator rules</p>
+    <h2 class="sec">Must-haves &amp; creator rules</h2>
+    <ul class="must">
+      <li><span class="ck">✓</span>Frame all benefits as <strong>your personal experience</strong> — individual results may vary.</li>
+      <li><span class="ck">✓</span>Make it feel like a <strong>simple habit that's easy to keep up with</strong> (30 seconds a day).</li>
+      <li><span class="ck">✓</span>Show Daily Fiber Mix and how you use it in a familiar drink.</li>
+      <li><span class="ck">✓</span>Tag <strong>@wonderbiotics.us</strong> on TikTok.</li>
+      <li><span class="ck">✓</span>Include these hashtags: <strong>#WonderBiotics #fyp #fiber #debloat #over40</strong></li>
+      <li><span class="ck">✓</span>Drop a warm, low-key prompt in your caption to get your audience talking — no gimmicks, just a friendly nudge. Example: "What's your usual morning drink — coffee, tea, or something else? Tell me in the comments."</li>
+      <li><span class="ck">✓</span>Publish the final video within <strong>14 days</strong> of receiving the product sample.</li>
+      <li><span class="ck">✓</span>After publishing, send the brand team the <strong>180-day ad authorization code</strong> for the video.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="kicker">Assets</p>
+    <h2 class="sec">Available video assets</h2>
+    <div class="assets">
+      <div class="asset">
+        <div class="inner">
+          <h3>Collaboration videos featuring trainers of Hollywood stars</h3>
+          <p>Use in your video when it fits your concept.</p>
+          <ul style="margin-left:18px;margin-top:8px;display:grid;gap:6px">
+            <li><a href="https://www.tiktok.com/@harley_pasternak/video/7689433700164963614" target="_blank" rel="noopener">Harley Pasternak video</a></li>
+            <li><a href="https://www.tiktok.com/@charlieputh/video/7678902268699102478" target="_blank" rel="noopener">Charlie Puth video</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="asset">
+        <div class="vid"><video controls preload="metadata" playsinline src="videos/comparison-of-solubility.mp4"></video></div>
+        <div class="inner">
+          <h3>Easy-Dissolve Comparison</h3>
+          <p>Include this footage when it fits your concept, or recreate it:</p>
+          <ol>
+            <li>Prep the water: two clear glasses, ~8 oz water each at 60°C / 140°F — no ice water, no ice.</li>
+            <li>Open the packets: snip one corner of each packet with scissors.</li>
+            <li>Add gradually: pour each powder slowly and continuously into its glass — don't dump it all at once.</li>
+            <li>Mix &amp; rest: swirl or stir each glass; let both sit for ~30 seconds.</li>
+            <li>Show the result: film both glasses side by side once the water is clear.</li>
+          </ol>
+          <div class="mini-links">
+            <a class="btn" href="videos/comparison-of-solubility.mp4" download="Comparison-of-Solubility.mp4">Download MP4</a>
+          </div>
+        </div>
+      </div>
+      <div class="asset">
+        <div class="vid"><video controls preload="metadata" playsinline src="videos/oil-absorption.mp4"></video></div>
+        <div class="inner">
+          <h3>Oil-Absorption Demo</h3>
+          <p>This provided oil-absorption demo can be inserted into your video wherever it fits naturally with your storyline.</p>
+          <div class="mini-links">
+            <a class="btn" href="videos/oil-absorption.mp4" download="Oil-Absorption.mp4">Download MP4</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Questions? Message the WonderBiotics brand team.</p>
+    <div class="htags"><span>#WonderBiotics</span><span>#fyp</span><span>#fiber</span><span>#debloat</span><span>#over40</span></div>
+    <p style="font-size:12.5px;color:#93B7A4">Publish within 14 days of receiving your sample · Send the 180-day ad authorization code after publishing</p>
+  </div>
+</footer>
+
+</body>
+</html>
